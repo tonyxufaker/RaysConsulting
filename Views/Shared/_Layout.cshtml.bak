@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rays Consulting</title>
+    <link href="~/Content/amazeui.css" rel="stylesheet" />
+    <link href="~/Content/common.min.css" rel="stylesheet" />
+    <link href="~/Content/index.min.css" rel="stylesheet" />
+    @RenderSection("head", false)
+</head>
+<body>
+    <div class="layout">
+        <!--===========layout-header================-->
+        <div class="layout-header am-hide-sm-only">
+            <!--topbar start-->
+            <div class="topbar">
+                <div class="container">
+                    <div class="am-g">
+                        <div class="am-u-md-3">
+                            <div class="topbar-left">
+                                <i class="am-icon-globe"></i>
+                                <div class="am-dropdown" data-am-dropdown>
+                                    <button class="am-btn am-btn-primary am-dropdown-toggle" data-am-dropdown-toggle>Language <span class="am-icon-caret-down"></span></button>
+                                    <ul class="am-dropdown-content">
+                                        <li><a href="#">English</a></li>
+                                        <li class="am-divider"></li>
+                                        <li><a href="#">Chinese</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="am-u-md-9">
+                            <div class="topbar-right am-text-right am-fr">
+                                Follow us
+                                <i class="am-icon-facebook"></i>
+                                <i class="am-icon-twitter"></i>
+                                <i class="am-icon-google-plus"></i>
+                                <i class="am-icon-pinterest"></i>
+                                <i class="am-icon-instagram"></i>
+                                <i class="am-icon-linkedin"></i>
+                                <i class="am-icon-youtube-play"></i>
+                                <i class="am-icon-rss"></i>
+                                <a href="javascript:;">Login</a>
+                                <a href="javascript:;">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--topbar end-->
+
+            <div class="header-box" data-am-sticky>
+                <!--header start-->
+                <div class="container">
+                    <div class="header">
+                        <div class="am-g">
+                            <div class="am-u-lg-2 am-u-sm-12">
+                                <div class="logo">
+                                    <a href=""><img src="/images/logo.jpg" alt="" /></a>
+                                </div>
+                            </div>
+                            <div class="am-u-md-10">
+                                <div class="header-right am-fr">
+                                    <div class="header-contact">
+                                        <div class="header_contacts--item">
+                                            <div class="contact_mini">
+                                                <i style="color:#AF3832" class="contact-icon am-icon-phone"></i>
+                                                <strong>+86 (0)510 85388616</strong>
+                                                <span>Monday ~ Friday, 9:00 - 18:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="header_contacts--item">
+                                            <div class="contact_mini">
+                                                <i style="color:#AF3832" class="contact-icon am-icon-envelope-o"></i>
+                                                <strong>service@raysconsulting.com.cn</strong>
+                                                <span>Look forward to hearing from you</span>
+                                            </div>
+                                        </div>
+                                        <div class="header_contacts--item">
+                                            <div class="contact_mini">
+                                                <i style="color:#AF3832" class="contact-icon am-icon-map-marker"></i>
+                                                <strong>Room 407, Building E2</strong>
+                                                <span>Linghu Road No.200, Xinwu District, Wuxi, Jiangsu</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="/Introduction/ContactUs" class="contact-btn">
+                                        <button type="button" class="am-btn am-btn-secondary am-radius">Contact Us</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--header end-->
+                <!--nav start-->
+                <div class="nav-contain">
+                    <div class="nav-inner">
+                        <ul class="am-nav am-nav-pills am-nav-justify">
+                            <li class=""><a href="/Home">Home</a></li>
+                            <li>
+                                <a href="/Introduction/AboutUs">About Us</a>
+                                @*<!-- sub-menu start-->
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="html/product1.html">产品展示1</a></li>
+                                    </ul>
+                                    <!-- sub-menu end-->*@
+                            </li>
+                            <li><a href="/Introduction/Solution">Solution</a></li>
+                            <li><a href="/Introduction/ContactUs">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--nav end-->
+            </div>
+        </div>
+        <!--mobile header start-->
+        <div class="m-header">
+            <div class="am-g am-show-sm-only">
+                <div class="am-u-sm-2">
+                    <div class="menu-bars">
+                        <a href="#doc-oc-demo1" data-am-offcanvas="{effect: 'push'}"><i class="am-menu-toggle-icon am-icon-bars"></i></a>
+                        <!-- 侧边栏内容 -->
+                        <nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas>
+                            <a href="javascript: void(0)" class="am-menu-toggle"></a>
+                            <div class="am-offcanvas">
+                                <div class="am-offcanvas-bar">
+                                    <ul class="am-menu-nav am-avg-sm-1">
+                                        <li><a href="/Home" class="">Home</a></li>
+                                        <li>
+                                            <a href="/Introduction/AboutUs" class="">About Us</a>
+                                            @*<ul class="am-menu-sub am-collapse ">
+                                                    <li class="">
+                                                        <a href="html/product1.html" class="">产品展示1</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="html/product2.html" class="">产品展示2</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="html/product3.html" class="">产品展示3</a>
+                                                    </li>
+                                                </ul>*@
+                                        </li>
+                                        <li class=""><a href="/Introduction/Solution" class="">Solution</a></li>
+                                        <li class=""><a href="/Introduction/ContactUs" class="">Contact Us</a></li>
+                                        <li class="am-parent">
+                                            <a href="" class="nav-icon nav-icon-globe">Language</a>
+                                            <ul class="am-menu-sub am-collapse  ">
+                                                <li>
+                                                    <a href="#">English</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#">Chinese</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-share-contain">
+                                            <div class="nav-share-links">
+                                                <i class="am-icon-facebook"></i>
+                                                <i class="am-icon-twitter"></i>
+                                                <i class="am-icon-google-plus"></i>
+                                                <i class="am-icon-pinterest"></i>
+                                                <i class="am-icon-instagram"></i>
+                                                <i class="am-icon-linkedin"></i>
+                                                <i class="am-icon-youtube-play"></i>
+                                                <i class="am-icon-rss"></i>
+                                            </div>
+                                        </li>
+                                        <li class=""><a href="html/login.html" class="">Login</a></li>
+                                        <li class=""><a href="html/register.html" class="">Register</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="am-u-sm-5 am-u-end">
+                    <div class="m-logo">
+                        <a href=""><img src="/images/logo.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!--mobile header end-->
+        </div>
+
+    </div>
+
+    @RenderBody()
+
+    <!--===========layout-footer================-->
+    <div class="layout-footer">
+        <div class="footer">
+            <div style="background-color:#AF3832" class="footer--bg"></div>
+            <div class="footer--inner">
+                <div class="container">
+                    <div class="footer_main">
+                        <div class="am-g">
+                            <div class="am-u-md-6 ">
+                                <div class="footer_main--column">
+                                    <strong class="footer_main--column_title">About Us</strong>
+                                    <div class="footer_about">
+                                        <p class="footer_about--text">
+                                            RAYS CONSULTING is committed to connecting and optimizing business resources to provide Executive Search & Professional Placement services for enterprises. The founders，come from a fortune 500 U.S. human resource firm, set up RAYS brand pioneering the concept of “Focus, and more Professional”, with the purpose of restoring the “consulting” essence of headhunting. With office headquartered in Wuxi, the business scope of RAYS covers large and medium-sized cities nationwide, focusing on manufacturing，automotive parts, construction and IT industries.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            @*<div class="am-u-md-3 ">
+                                    <div class="footer_main--column">
+                                        <strong class="footer_main--column_title">产品中心</strong>
+                                        <ul class="footer_navigation">
+                                            <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">Enterplorer 企业浏览器</a></li>
+                                            <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">Xcloud 网站跨屏云</a></li>
+                                            <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">Amaze UI 前端开发框架</a></li>
+                                            <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">Amaze UI 前端开发框架</a></li>
+                                            <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">Amaze UI 前端开发框架</a></li>
+                                        </ul>
+                                    </div>
+                                </div>*@
+                            @*<div class="am-u-md-3 ">
+                                    <div class="footer_main--column">
+                                        <strong class="footer_main--column_title">技术支持</strong>
+                                        <ul class="footer_navigation">
+                                            <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">企业移动信息化白皮书</a></li>
+                                            <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">企业移动信息化白皮书</a></li>
+                                            <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">企业移动信息化白皮书</a></li>
+                                            <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">企业移动信息化白皮书</a></li>
+                                            <li class="footer_navigation--item"><a href="#" class="footer_navigation--link">企业移动信息化白皮书</a></li>
+                                        </ul>
+                                    </div>
+                                </div>*@
+                            <div class="am-u-md-3 ">
+                                <div class="footer_main--column">
+                                    <strong class="footer_main--column_title">Contact Us</strong>
+                                    <ul class="footer_contact_info">
+                                        <li class="footer_contact_info--item"><i class="am-icon-phone"></i><span>TEL：+86 (0)510 85388616</span></li>
+                                        <li class="footer_contact_info--item"><i class="am-icon-envelope-o"></i><span>service@raysconsulting.com.cn</span></li>
+                                        <li class="footer_contact_info--item"><i class="am-icon-map-marker"></i><span>Room 407, Building E2, Linghu Road No.200, Xinwu District, Wuxi, Jiangsu</span></li>
+                                        <li class="footer_contact_info--item"><i class="am-icon-clock-o"></i><span>Monday ~ Friday, 9:00 - 18:00</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-2.1.0.js"></script>
+    <script src="~/Scripts/amazeui.js"></script>
+    <script src="~/Scripts/common.js"></script>
+</body>
+</html>
