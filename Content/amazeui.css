@@ -507,10 +507,17 @@ h6 {
   font-size: 100%;
 }
 h1 {
-  font-size: 1.5em;
+    font-size: 1.5em;
+    color: #af0832;
 }
 h2 {
-  font-size: 1.25em;
+    font-size: 1.25em;
+    color: #af0832;
+}
+h3 {
+    font-size: 28px;
+    color:#0e90d2;
+    font-weight:bold;
 }
 * + h1,
 * + h2,
